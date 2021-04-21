@@ -1,0 +1,40 @@
+/* Required for full background image */
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .view {
+    height: 100vh;
+  }
+}
+
+.top-nav-collapse ,.page-footer{
+  background-color: #e7e413 !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: #b67b0f !important;
+  }
+}
+
+.rgba-gradient {
+  background: rgba(16, 189, 74, 0.6);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgba(13, 167, 206, 0.658), rgba(30, 18, 206, 0.904));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(10, 219, 73), rgba(88, 11, 212, 0.884)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.streak.streak-photo {
+  background-attachment: fixed;
+}
